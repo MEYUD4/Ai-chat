@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>VENDETTA V - III</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- STYLE -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="chat-container">
+
+    <!-- HEADER -->
+    <div class="header">
+      <span>VENDETTA</span> V - III
+      <div class="subtitle">CYBER INTELLIGENCE UNIT</div>
+    </div>
+
+    <!-- CHAT AREA -->
+    <div class="messages" id="messages">
+      <div class="msg bot">
+        Aku adalah <b>VENDETTA V - III</b>.<br>
+        Sistem online. Tunggu perintah.
+      </div>
+    </div>
+
+    <!-- INPUT -->
+    <div class="input-area">
+      <input 
+        id="input"
+        type="text"
+        placeholder="Ketik perintah..."
+        autocomplete="off"
+        onkeydown="if(event.key==='Enter') sendMsg()"
+      />
+      <button onclick="sendMsg()">SEND</button>
+    </div>
+
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="/js/chat.js"></script>
+</body>
+</html>
